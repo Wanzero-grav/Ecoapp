@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "126850254725",
+    "project_id": "braingrape-c47c1",
+    "storage_bucket": "braingrape-c47c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126850254725:android:0bd4a37783fb761deda6ec",
+        "android_client_info": {
+          "package_name": "space.sadnov.alenov.ecoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126850254725-qmjm3er9m2o3d3jl7lk3038s7spp7ekt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "space.sadnov.alenov.ecoapp",
+            "certificate_hash": "49fc63c31e83b2389c022e441a0edf8fb00aa802"
+          }
+        },
+        {
+          "client_id": "126850254725-adq3s9vp51u3p1anrnnoqaih861irgc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD52fo3qw5q9iURRbXKOVOrJJ-0mWANn88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126850254725-adq3s9vp51u3p1anrnnoqaih861irgc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
