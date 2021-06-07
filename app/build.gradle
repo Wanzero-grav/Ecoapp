@@ -63,6 +63,16 @@ dependencies {
     implementation("androidx.coordinatorlayout:coordinatorlayout:1.1.0")
 
 
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.2@aar'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.iammert:ReadableBottomBar:0.2'
+
+
 
 }
 apply plugin: 'com.android.application'
