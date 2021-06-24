@@ -12,48 +12,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
         android:layout_margin="5dp"
         android:orientation="vertical">
 
-        <LinearLayout
+
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="bottom"
-            tools:ignore="MissingConstraints\,UselessParent">
-            >
+            android:layout_height="282dp"
+            app:srcCompat="@drawable/vfcq9ejfchs" />
 
-            <Button
-                android:id="@+id/btnmap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="10sp"
-                android:text="@string/map" />
 
-            <Button
-                android:id="@+id/btnguide"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="10sp"
-                android:text="@string/guide" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnpractice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="10sp"
-                android:text="@string/practice" />
+        <Button
+            android:id="@+id/btn_SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@color/rippelColor"
+            android:text="@string/btnSignIn"
+            android:textColor="@color/white" />
 
-            <Button
-                android:id="@+id/btnsettings"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="10dp"
-                android:text="@string/settings" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/btnRegister"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

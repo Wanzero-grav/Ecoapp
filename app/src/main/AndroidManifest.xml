@@ -7,6 +7,7 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,9 +17,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ecoapp">
 
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_api" />
+            android:value="AIzaSyCkLUeLf-u-bdnLZgcx3_-nYa-Z7hhu6vo" />
 
         <activity
             android:name=".MapActivity"

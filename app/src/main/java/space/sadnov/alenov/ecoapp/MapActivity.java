@@ -18,6 +18,7 @@ import com.google.android.gms.location.LocationSettingsResponse;
 import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -40,6 +41,7 @@ import com.mancj.materialsearchbar.MaterialSearchBar;
 import com.mancj.materialsearchbar.adapter.SuggestionsAdapter;
 import com.skyfishjy.library.RippleBackground;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -57,7 +59,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MapActivity extends AppCompatActivity {
+public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private FusedLocationProviderClient mFusedLocationProviderClient;
@@ -110,9 +112,8 @@ public class MapActivity extends AppCompatActivity {
             public void onButtonClicked(int buttonCode) {
                 if (buttonCode == MaterialSearchBar.BUTTON_NAVIGATION) {
                     //opening or closing a navigation drawer
-                } else if (buttonCode == MaterialSearchBar.BUTTON_BACK) {
+                } else if (buttonCode == MaterialSearchBar.BUTTON_BACK)
                     materialSearchBar.disableSearch();
-                }
             }
         });
 
@@ -211,7 +212,6 @@ public class MapActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     @SuppressLint("MissingPermission")
@@ -229,7 +229,7 @@ public class MapActivity extends AppCompatActivity {
             layoutParams.setMargins(0, 0, 40, 180);
         }
 
-        //check if gps is enabled or not and then request user to enable it
+        //проверьте, включен ли gps или нет, а затем попросите пользователя включить его
         LocationRequest locationRequest = LocationRequest.create();
         locationRequest.setInterval(10000);
         locationRequest.setFastestInterval(5000);
@@ -318,8 +318,5 @@ public class MapActivity extends AppCompatActivity {
                         }
                     }
                 });
-    }
-}
-
     }
 }
